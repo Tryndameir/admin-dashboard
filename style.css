@@ -43,7 +43,6 @@ li {
     position: relative;
     top: -100px;
     font-size: 28px;
-    padding-bottom: -50px;
 }
 
 .sidebar {
@@ -59,7 +58,8 @@ li {
 }
 
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 60% 40%;
     background-color: white;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -132,4 +132,70 @@ li {
     color: rgb(71, 70, 70);
     font-size: 24px;
     font-weight:600;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 13fr;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.search img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.search input {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.picture {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.user {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.bell {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.profile-picture {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.profile {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.menu li {
+    grid-column-start: 1;
+    grid-row: 1 / 2;
 }
